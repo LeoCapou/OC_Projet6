@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- En-tête de la page -->
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>JustStreamIt</title>
+        <script type="text/javascript" src="index.js" defer></script>
+    </head>
+
+    <body>
+        <!-- POPUP -->
+        <div id="popup_film" style="display: none;">
+            <a id="close_popup_film" href="#">&#10006</a>
+            <div id="text_popup_film">
+                <p>texte popup</p>
+            </div>
+        </div>
+        <!-- MENU -->  
+        <nav>           
+            <ul>
+                <li><img id="logo" src="logo.png" alt="logo JustStreamIt"></li>
+                <li><a href="#">Acceuil</a></li>
+                <li class="deroulant"><a href="#">Catégories</a>
+                    <ul class="sous">
+                        <li><a href="#title-best-films">Films les mieux notés</a></li>
+                        <li><a href="#title-categorie1">Films d'action</a></li>
+                        <li><a href="#title-categorie2">Films d'animation</a></li>
+                        <li><a href="#title-categorie3">Films d'aventure</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- MEILLEUR FILM -->
+        <section>
+            <div class="container">
+                <img id="img-best-film" src="" alt="alt du meilleur film">
+                <div class="centerleft">
+                    <h2 id="title-best-film"> Title </h2>
+                    <button type="button" id="btn-best-film" class="img-film">
+                            &#9658 Play
+                    </button>
+                    <p id="description-best-film">Ceci est une description pour tester la longueur du container, il faut qu'elle soit assez longue pour tester la troncature</p>
+                </div>    
+            </div>               
+        </section>
+
+        <!-- LISTE MEILLEURS FILMS -->
+        <h2 id="title-best-films" class="category-title">Films les mieux notés</h2>
+        <div class="wrapper">
+            <!-- Section 1 -->
+            <section id="section1">
+              <a id ="left-btn-best-films" href="#section2" class="arrow__btn left-arrow">‹</a>
+              <div class="item">
+                <a href="#">
+                    <img id="img-best-film-1"
+                    class="img-film"
+                    src=""
+                    alt="Describe Image">          
+                </a>
+              </div>
+              <div class="item">         
+                <a href="#">
+                    <img id="img-best-film-2"
+                    class="img-film"
+                    src=""
+                    alt="Describe Image">                   
+                </a>
+              </div>
+              <div class="item">
+                
+                <a href="#">
+                    <img id="img-best-film-3"
+                    class="img-film"
+                    src=""
+                    alt="Describe Image">  
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                    <img id="img-best-film-4"
+                    class="img-film"
+                    src=""
+                    alt="Describe Image">  
+                </a>
+              </div>
+              <a id="right-btn-best-films" href="#section2" class="arrow__btn right-arrow">›</a>
+            </section>
+            
+            <!-- Section 2 -->
+            <section id="section2">
+                <a id ="left-btn-best-films" href="#section1" class="arrow__btn left-arrow">‹</a>
+                <div class="item">
+                  <a href="#">
+                      <img id="img-best-film-5"
+                      class="img-film"
+                      src=""
+                      alt="Describe Image">          
+                  </a>
+                </div>
+                <div class="item">         
+                  <a href="#">
+                      <img id="img-best-film-6"
+                      class="img-film"
+                      src=""
+                      alt="Describe Image">                   
+                  </a>
+                </div>
+                <div class="item">
+                  
+                  <a href="#">
+                      <img id="img-best-film-7"
+                      class="img-film"
+                      src=""
+                      alt="Describe Image">  
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="#">
+                      <img id="img-best-film-8"
+                      class="img-film"
+                      src=""
+                      alt="Describe Image">  
+                  </a>
+                </div>
+                <a id="right-btn-best-films" href="#section1" class="arrow__btn right-arrow">›</a>
+              </section>  
+        </div> 
+        
+        <!-- LISTE CATEGORIE 1 -->
+        <h2 id="title-categorie1" class="category-title">Films d'action</h2>
+        <div class="wrapper">
+            <!-- Section 1 -->
+            <section id="section1-categorie1">
+              <a id ="left-btn-categorie1" href="#section2-categorie1" class="arrow__btn left-arrow">‹</a>
+              <div class="item">
+                <a href="#">
+                    <img id="img-categorie1-1"
+                    class="img-film"
+                    src=""
+                    alt="Describe Image">          
+                </a>
+              </div>
+              <div class="item">         
+                <a href="#">
+                    <img id="img-categorie1-2"
+                    class="img-film"
+                    src=""
+                    alt="Describe Image">                   
+                </a>
+              </div>
+              <div class="item">
+                
+                <a href="#">
+                    <img id="img-categorie1-3"
+                    class="img-film"
+                    src=""
+                    alt="Describe Image">  
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                    <img id="img-categorie1-4"
+                    class="img-film"
+                    src=""
+                    alt="Describe Image">  
+                </a>
+              </div>
+              <a id="right-btn-categorie1" href="#section2-categorie1" class="arrow__btn right-arrow">›</a>
+            </section>
+            
+            <!-- Section 2 -->
+            <section id="section2-categorie1">
+                <a id ="left-btn-categorie1" href="#section1-categorie1" class="arrow__btn left-arrow">‹</a>
+                <div class="item">
+                  <a href="#">
+                      <img id="img-categorie1-5"
+                      class="img-film"
+                      src=""
+                      alt="Describe Image">          
+                  </a>
+                </div>
+                <div class="item">         
+                  <a href="#">
+                      <img id="img-categorie1-6"
+                      class="img-film"
+                      src=""
+                      alt="Describe Image">                   
+                  </a>
+                </div>
+                <div class="item">
+                  
+                  <a href="#">
+                      <img id="img-categorie1-7"
+                      class="img-film"
+                      src=""
+                      alt="Describe Image">  
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="#">
+                      <img id="img-categorie1-8"
+                      class="img-film"
+                      src=""
+                      alt="Describe Image">  
+                  </a>
+                </div>
+                <a id="right-btn-categorie1" href="#section1-categorie1" class="arrow__btn right-arrow">›</a>
+              </section>  
+        </div>
+        
+        <!-- LISTE CATEGORIE 2 -->
+        <h2 id="title-categorie2" class="category-title">Films d'animation</h2>
+        <div class="wrapper">
+            <!-- Section 1 -->
+            <section id="section1-categorie2">
+              <a id ="left-btn-categorie1" href="#section2-categorie2" class="arrow__btn left-arrow">‹</a>
+              <div class="item">
+                <a href="#">
+                    <img id="img-categorie2-1"
+                    class="img-film"
+                    src=""
+                    alt="Describe Image">          
+                </a>
+              </div>
+              <div class="item">         
+                <a href="#">
+                    <img id="img-categorie2-2"
+                    class="img-film"
+                    src=""
+                    alt="Describe Image">                   
+                </a>
+              </div>
+              <div class="item">
+                
+                <a href="#">
+                    <img id="img-categorie2-3"
+                    class="img-film"
+                    src=""
+                    alt="Describe Image">  
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                    <img id="img-categorie2-4"
+                    class="img-film"
+                    src=""
+                    alt="Describe Image">  
+                </a>
+              </div>
+              <a id="right-btn-categorie2" href="#section2-categorie2" class="arrow__btn right-arrow">›</a>
+            </section>
+            
+            <!-- Section 2 -->
+            <section id="section2-categorie2">
+                <a id ="left-btn-categorie2" href="#section1-categorie2" class="arrow__btn left-arrow">‹</a>
+                <div class="item">
+                  <a href="#">
+                      <img id="img-categorie2-5"
+                      class="img-film"
+                      src=""
+                      alt="Describe Image">          
+                  </a>
+                </div>
+                <div class="item">         
+                  <a href="#">
+                      <img id="img-categorie2-6"
+                      class="img-film"
+                      src=""
+                      alt="Describe Image">                   
+                  </a>
+                </div>
+                <div class="item">
+                  
+                  <a href="#">
+                      <img id="img-categorie2-7"
+                      class="img-film"
+                      src=""
+                      alt="Describe Image">  
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="#">
+                      <img id="img-categorie2-8"
+                      class="img-film"
+                      src=""
+                      alt="Describe Image">  
+                  </a>
+                </div>
+                <a id="right-btn-categorie2" href="#section1-categorie2" class="arrow__btn right-arrow">›</a>
+              </section>  
+        </div>       
+        
+        <!-- LISTE CATEGORIE 3 -->
+        <h2 id="title-categorie3" class="category-title">Films d'aventure</h2>
+        <div class="wrapper">
+            <!-- Section 1 -->
+            <section id="section1-categorie3">
+              <a id ="left-btn-categorie3" href="#section2-categorie3" class="arrow__btn left-arrow">‹</a>
+              <div class="item">
+                <a href="#">
+                    <img id="img-categorie3-1"
+                    class="img-film"
+                    src=""
+                    alt="Describe Image">          
+                </a>
+              </div>
+              <div class="item">         
+                <a href="#">
+                    <img id="img-categorie3-2"
+                    class="img-film"
+                    src=""
+                    alt="Describe Image">                   
+                </a>
+              </div>
+              <div class="item">
+                
+                <a href="#">
+                    <img id="img-categorie3-3"
+                    class="img-film"
+                    src=""
+                    alt="Describe Image">  
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                    <img id="img-categorie3-4"
+                    class="img-film"
+                    src=""
+                    alt="Describe Image">  
+                </a>
+              </div>
+              <a id="right-btn-categorie3" href="#section2-categorie3" class="arrow__btn right-arrow">›</a>
+            </section>
+            
+            <!-- Section 2 -->
+            <section id="section2-categorie3">
+                <a id ="left-btn-categorie3" href="#section1-categorie3" class="arrow__btn left-arrow">‹</a>
+                <div class="item">
+                  <a href="#">
+                      <img id="img-categorie3-5"
+                      class="img-film"
+                      src=""
+                      alt="Describe Image">          
+                  </a>
+                </div>
+                <div class="item">         
+                  <a href="#">
+                      <img id="img-categorie3-6"
+                      class="img-film"
+                      src=""
+                      alt="Describe Image">                   
+                  </a>
+                </div>
+                <div class="item">
+                  
+                  <a href="#">
+                      <img id="img-categorie3-7"
+                      class="img-film"
+                      src=""
+                      alt="Describe Image">  
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="#">
+                      <img id="img-categorie3-8"
+                      class="img-film"
+                      src=""
+                      alt="Describe Image">  
+                  </a>
+                </div>
+                <a id="right-btn-categorie3" href="#section1-categorie3" class="arrow__btn right-arrow">›</a>
+              </section>  
+        </div>         
+                
+        <div class="test"></div>
+    </body>
+</html>
