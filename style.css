@@ -7,7 +7,7 @@ body a {
   text-decoration: none;
 }
 body #popup_film {
-  background-color: red;
+  background-color: #000000;
   position: fixed;
   top: 50px;
   bottom: 50px;
@@ -17,6 +17,19 @@ body #popup_film {
   z-index: 1;
   padding: 1% 1%;
 }
+body #popup_film td {
+  width: 50%;
+  height: 100%;
+}
+body #popup_film #text_popup_film {
+  height: 100%;
+  object-fit: contain;
+}
+body #popup_film #img_popup {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 body #popup_film #close_popup_film {
   text-decoration: none;
   color: white;
@@ -24,18 +37,6 @@ body #popup_film #close_popup_film {
 body #popup_film .intitule {
   font-weight: bold;
   font-style: italic;
-}
-body #popup_film img {
-  display: block;
-  position: absolute;
-  height: 100%;
-  right: 0px;
-  top: 0px;
-  object-fit: contain;
-}
-body #popup_film #text_popup_film {
-  width: 70%;
-  overflow: scroll;
 }
 body nav {
   height: 50px;
@@ -135,7 +136,7 @@ html {
   scroll-behavior: smooth;
 }
 .wrapper img {
-  width: 70%;
+  width: 100%;
 }
 .wrapper section {
   width: 100%;

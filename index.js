@@ -1,6 +1,6 @@
 // click sur image film
 document.body.onclick = function(e) {   //when the document body is clicked
-  e.preventDefault;
+  //e.preventDefault;
   e = e.target;                   //assign the element clicked to e
 
   if (e.className && e.className.indexOf('img-film') != -1) {
@@ -17,14 +17,6 @@ document.body.onclick = function(e) {   //when the document body is clicked
   
 }
 
-/*var elements = document.getElementsByClassName("img-film");
-for (var i = 0; i < elements.length; i++) {
-  //elements[i].addEventListener('click', myFunction, false);
-  console.log("test");
-  console.log(elements[i].getAttribute("id-film"));
-}*/
-
-
 // Remplir popup film
 function FillPopupFilm(id_film){
   url_film_popup = 'http://localhost:8000/api/v1/titles/' + String(id_film);
@@ -32,8 +24,8 @@ function FillPopupFilm(id_film){
   .then(function(resp) {
     var myJSON_filmpopup_promise = resp.json();
     myJSON_filmpopup_promise.then(function(myJSON_filmpopup){
-      document.getElementById("text_popup_film").innerHTML = '<img src="' + myJSON_filmpopup["image_url"] + '">'
-                                                            +'<p> <span class="intitule"> Titre: </span>' + myJSON_filmpopup["title"] + '</p>'
+      document.getElementById("img_popup").src=myJSON_filmpopup["image_url"];
+      document.getElementById("text_popup_film").innerHTML = '<p> <span class="intitule"> Titre: </span>' + myJSON_filmpopup["title"] + '</p>'
                                                             +'<p> <span class="intitule"> Genres: </span>' + myJSON_filmpopup["genres"] + '</p>'
                                                             +'<p> <span class="intitule"> Date de sortie: </span>' + myJSON_filmpopup["date_published"] + '</p>' 
                                                             +'<p> <span class="intitule"> Rated: </span>' + myJSON_filmpopup["rated"] + '</p>'

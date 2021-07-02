@@ -9,14 +9,29 @@ body {
     text-decoration: none;
   }
   #popup_film{
-    background-color: red;
+    background-color: $primary-color;
     position: fixed; 
     top: 50px; 
     bottom: 50px;
     right: 200px; 
     left: 200px; 
     border: 2px solid white;z-index: 1;
-    padding: 1% 1%;    
+    padding: 1% 1%;
+    td {
+      width: 50%;
+      height: 100%;
+    }
+    #text_popup_film{
+      height: 100%;
+      object-fit: contain;
+    }
+
+    #img_popup {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }     
+    
     #close_popup_film{
       text-decoration: none;
       color:white;
@@ -24,18 +39,6 @@ body {
     .intitule{
       font-weight: bold;
       font-style: italic;
-    }
-    img{
-      display:block;
-      position:absolute;
-      height: 100%;
-      right: 0px;
-      top: 0px;
-      object-fit: contain;
-    } 
-    #text_popup_film{
-      width: 70%;
-      overflow: scroll;
     }
   }
   nav {
@@ -145,7 +148,7 @@ html {
   scroll-behavior: smooth;
 
   img { 
-    width:70%;
+    width:100%;
     //border-radius: 8px;
   }
 
